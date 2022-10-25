@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="KhachHangControl.ascx.cs" Inherits="Areas_Client_KhachHang_KhachHangControl" %>
+<asp:PlaceHolder runat="server" ID="plkhachhang"></asp:PlaceHolder>

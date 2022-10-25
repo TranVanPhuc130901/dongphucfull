@@ -1,0 +1,67 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="GioiThieu_ThemMoi.ascx.cs" Inherits="Areas_admin_GioiThieu_GioiThieu_ThemMoi" %>
+<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
+<div class="formthemmoi">
+    <asp:Literal ID="ltrThongBao" runat="server"></asp:Literal>
+    <div class="thongTin">
+        <div class="tentruong">Tên giới thiệu</div>
+        <div class="oNhap">
+            <asp:TextBox ID="tbtengt" runat="server"></asp:TextBox>
+
+        </div>
+    </div>
+    <div class="thongTin">
+        <div class="tentruong">Ngày Tạo</div>
+        <div class="oNhap">
+            <asp:TextBox ID="tbngaytao" runat="server"></asp:TextBox>
+
+        </div>
+    </div>
+    <div class="thongTin">
+        <div class="tentruong">Lượt Xem</div>
+        <div class="oNhap">
+            <asp:TextBox ID="tbluotxem" runat="server"></asp:TextBox>
+
+        </div>
+    </div>
+    <div class="thongTin">
+        <div class="tentruong">Mô Tả</div>
+        <div class="oNhap">
+            <asp:TextBox ID="tbmota" runat="server"></asp:TextBox>
+
+        </div>
+    </div>
+   
+    <div class="thongTin">
+        <div class="tentruong">Mã Danh Mục Giới Thiệu</div>
+        <div class="oNhap">
+            <asp:DropDownList runat="server" ID="ddlmagioithieu"></asp:DropDownList>
+
+        </div>
+    </div>
+    
+    <div class="thongTin">
+        <div class="tentruong">Ảnh Đại Diện</div>
+        <div class="oNhap">
+            <div>
+                <asp:HiddenField ID="hdTenAnhDaiDienCu" runat="server" />
+                <asp:Literal ID="ltrAnhDaiDien" runat="server"></asp:Literal>
+            </div>
+            <asp:FileUpload ID="flAnhDaiDien" runat="server" />
+        </div>
+    </div>
+
+    <CKEditor:CKEditorControl ID="tbchitiet" runat="server" FilebrowserImageBrowseUrl="ckeditor/ckfinder/ckfinder.aspx?type=Images&path=pic"></CKEditor:CKEditorControl>
+    <div class="thongTin1">
+        <div class="tentruong">&nbsp;</div>
+        <div class="oNhap">
+            <asp:CheckBox ID="cbThemNhieuDanhMuc" runat="server" Text="Tạo thêm danh mục khác sau khi tạo danh mục này" />
+        </div>
+    </div>
+    <div class="thongTin1">
+        <div class="tentruong">&nbsp;</div>
+        <div class="oNhap">
+            <asp:Button ID="btThemMoi" runat="server" Text="Thêm mới" CssClass="btThemMoi" OnClick="btThemMoi_Click" />
+            <asp:Button ID="btHuy" runat="server" Text="Hủy" CssClass="btHuy" CausesValidation="false" Style="height: 26px" OnClick="btHuy_Click" />
+        </div>
+    </div>
+</div>

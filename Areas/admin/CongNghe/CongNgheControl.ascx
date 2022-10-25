@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CongNgheControl.ascx.cs" Inherits="Areas_admin_CongNghe_CongNgheControl" %>
+<asp:PlaceHolder ID="plcongnghe" runat="server"></asp:PlaceHolder>

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="GioiThieuControl.ascx.cs" Inherits="Areas_Client_GioiThieu_GioiThieuControl" %>
+<asp:PlaceHolder runat="server" ID="plgioithieu"></asp:PlaceHolder>

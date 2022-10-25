@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SanPhamControl.ascx.cs" Inherits="Areas_Client_SanPham_SanPhamClientControl" %>
+<asp:PlaceHolder runat="server" ID="plsanphamclient"></asp:PlaceHolder>
